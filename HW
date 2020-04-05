@@ -1,1 +1,48 @@
+#Task1
+x=("""The Zen of Python, by Tim Peters 
+Beautiful is better than ugly.   
+Explicit is better than implicit.
+Simple is better than complex.   
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to 
+guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.   
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!""")
+print(x.upper())
+print('Number of IS:', x.count('is'))
+print('Number of BETTER:', x.count('better'))
+print('Number of NEVER:', x.count('never'))
+print(x.replace('i','&'))
 
+#Task2
+print('Enter 4 signs number:')
+a=input()
+a=str(a)
+b1=int(a[0])
+b2=int(a[1])
+b3=int(a[2])
+b4=int(a[3])
+print('Product:',b1*b2*b3*b4)
+
+print("Reverse order:",a[3],a[2],a[1],a[0])
+
+#Task3
+print("Enter some text 1:")
+c=input()
+print("Enter some text 2:")
+d=input()
+c, d=d, c
+print("Text 1:", c)
+print("Text 2:", d)
