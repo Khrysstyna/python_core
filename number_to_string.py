@@ -1,0 +1,5 @@
+print("Enter number:")
+number_to_string=int(input())
+print("Initial type:",type(number_to_string))
+number_to_string=str(number_to_string)
+print("Converted type:",type(number_to_string))
